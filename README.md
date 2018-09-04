@@ -4,6 +4,18 @@ Derived from bgruening/docker-galaxy-stable https://github.com/bgruening/docker-
 
 The image built with GalaxyE_tool_list.yml will help to do final tests on developped tools.
 
+## How to run :
+
+In the repo :  
+
+```
+$ docker build -t galaxy-e .
+
+$ docker run -p 8080:80 galaxy-e
+```
+
+Open your web browser on http://localhost:8080
+
 ## Categories and tool list to test  :
 
 * Upload
@@ -13,20 +25,20 @@ The image built with GalaxyE_tool_list.yml will help to do final tests on develo
    
 * Rdata files manipulation
 
-    * Rdata reader
+    * [x] Rdata reader
     
-    * Rdata parser
+    * [x] Rdata parser
     
     
-* VigieChiro #TODO check with yves its ok to make the classifier available
+* VigieChiro 
 
-    * IdCorrect2ndlayer
+    * [x] IdCorrect2ndlayer
     
-    * BilanEnrichi
+    * [x] BilanEnrichi
     
-    * IdValid
+    * [x] IdValid
     
-    * Sqlite tadarida to tabular
+    * [x] Sqlite tadarida to tabular
     
     * Tadarida-c
     
@@ -35,19 +47,19 @@ The image built with GalaxyE_tool_list.yml will help to do final tests on develo
     
 * RegionalGAM
 
-    * Expected temporal trend
+    * [x] Expected temporal trend
     
-    * Abundance index
+    * [x] Abundance index
     
-    * Linear regression
+    * [x] Linear regression
     
-    * Trend
+    * [x] Trend
     
-    * Linear regression ajusted
+    * [x] Linear regression ajusted
     
-    * Autocorrection residus
+    * [x] Autocorrection residus
     
-    * Fligth curve
+    * [x] Fligth curve
     
     
 * SIG
@@ -66,22 +78,25 @@ The image built with GalaxyE_tool_list.yml will help to do final tests on develo
     
     * [x] GdalBuildVRT
     
-    * NetcdfRead
+    * [x] NetcdfRead
     
-    * NetcdfMetadataInfo
+    * [x] NetcdfMetadataInfo
 
 
+* Convert format
+
+    * [x] Tabular2csv
+    
+    * [x] Csv2tabular
+    
+    
 * Need some work / Not sure yet
-
-    * Tabular2csv
-    
-    * Csv2tabular
     
     * Taxref
     
-    * Langue2Boeuf
+    * [x] Langue2Boeuf #No docmentation nor help now
     
-    * Worldclim climatic data
+    * [x] Worldclim climatic data #Ok without the geotif save option. What's wrong with r-rgdal in conda ? need few more tests
     
     * STOCeps
     
