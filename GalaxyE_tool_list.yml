@@ -382,10 +382,22 @@ tools:
     owner: devteam
     tool_panel_section_label: Quality check
     
+  - name: multiqc
+    owner: iuc
+    tool_panel_section_label: Quality check
+    
+  - name: mothur_sffinfo
+    owner: iuc
+    tool_panel_section_label: File Conversion
+    
+  - name: fastq_combiner
+    owner: devteam
+    tool_panel_section_label: File Conversion
+    
   - name: frogs_2_0_0
     owner: frogs
     tool_panel_section_label: Find Rapidly OTUs from NGS
-    
+
 
 
 
