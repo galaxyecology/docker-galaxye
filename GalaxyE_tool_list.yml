@@ -414,6 +414,11 @@ tools:
   - name: tabular_to_csv
     owner: mnhn65mo
     tool_panel_section_label: File Conversion
+
+
+  - name: xls2tabular
+    owner: ylebras
+    tool_panel_section_label: File Conversion
     
 
   - name: butterfly_analysis
