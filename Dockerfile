@@ -1,5 +1,4 @@
-FROM bgruening/galaxy-stable
-
+FROM bgruening/galaxy-stable:19.01
 
 MAINTAINER yvanlebras
 
